@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#8E8FFA"
+    tools:context=".UpdateActivity">
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#33186B"
+            android:hint="Title"
+            android:textSize="22sp"
+            android:id="@+id/notetitle"
+            android:padding="15dp"
+            android:textColorHint="#33186B"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#33186B"
+            android:hint="Content"
+            android:id="@+id/notecontent"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:textColorHint="#33186B"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="24sp"
+            android:layout_marginTop="50sp"
+            android:id="@+id/delete"
+            android:backgroundTint="#756AB6"/>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatebutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_done_24"/>
+
+</RelativeLayout>
